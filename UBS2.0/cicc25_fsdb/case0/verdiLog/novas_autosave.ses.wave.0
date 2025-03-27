@@ -1,0 +1,268 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 992 277 117
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/EDA_exercise_bupt/UBS2.0/cicc25_fsdb/case0/case0.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 442747.089642
+cursor 111000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 41
+; marker line index
+markerPos 190
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "system and register"
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/UBS2.0/cicc25_fsdb/case0/case0.fsdb"
+addSignal -h 15 /usb_link_top_tb/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope ms
+addSignal -h 15 -holdScope self_addr[6:0]
+addSignal -h 15 -holdScope time_threshold[15:0]
+addSignal -h 15 -holdScope delay_threshole[5:0]
+addSignal -h 15 -holdScope crc5_err
+addSignal -h 15 -holdScope time_out
+addSignal -h 15 -holdScope d_oe
+addGroup "interface with phy"
+addSignal -h 15 /usb_link_top_tb/rx_lp_sop
+addSignal -h 15 -holdScope rx_lp_eop
+addSignal -h 15 -holdScope rx_lp_valid
+addSignal -h 15 -holdScope rx_lp_ready
+addSignal -h 15 -holdScope rx_lp_data[7:0]
+addSignal -h 15 -holdScope tx_lp_sop
+addSignal -h 15 -holdScope tx_lp_eop
+addSignal -h 15 -holdScope tx_lp_valid
+addSignal -h 15 -holdScope tx_lp_ready
+addSignal -h 15 -holdScope tx_lp_data[7:0]
+addSignal -h 15 -holdScope tx_lp_cancle
+addGroup "with link layer"
+addSignal -h 15 /usb_link_top_tb/rx_pid_en
+addSignal -h 15 -holdScope rx_pid[3:0]
+addSignal -h 15 -holdScope rx_endp[3:0]
+addSignal -h 15 -holdScope rx_lt_sop
+addSignal -h 15 -holdScope rx_lt_eop
+addSignal -h 15 -holdScope rx_lt_valid
+addSignal -h 15 -holdScope rx_lt_ready
+addSignal -h 15 -holdScope rx_lt_data[7:0]
+addSignal -h 15 -holdScope tx_pid[3:0]
+addSignal -h 15 -holdScope tx_addr[6:0]
+addSignal -h 15 -holdScope tx_endp[3:0]
+addSignal -h 15 -holdScope tx_valid
+addSignal -h 15 -holdScope tx_ready
+addSignal -h 15 -holdScope tx_lt_sop
+addSignal -h 15 -holdScope tx_lt_eop
+addSignal -h 15 -holdScope tx_lt_ready
+addSignal -h 15 -holdScope tx_lt_valid
+addSignal -h 15 -holdScope tx_lt_data[7:0]
+addSignal -h 15 -holdScope tx_lt_cancle
+addGroup "others"
+addSignal -h 15 /usb_link_top_tb/abc[1:0]
+addSignal -h 15 -holdScope c_out[4:0]
+addSignal -h 15 -holdScope cnt[4:0]
+addSignal -h 15 -holdScope d[10:0]
+addSignal -h 15 -holdScope i[9:0]
+addSignal -h 15 -holdScope j[9:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope num0[9:0]
+addGroup "crc5_ru"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/crc5_ru_u0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope self_addr[6:0]
+addSignal -h 15 -holdScope crc5_err
+addSignal -h 15 -holdScope rx_lp_sop
+addSignal -h 15 -holdScope rx_lp_eop
+addSignal -h 15 -holdScope rx_lp_valid
+addSignal -h 15 -holdScope rx_lp_ready
+addSignal -h 15 -holdScope rx_lp_data[7:0]
+addSignal -h 15 -holdScope rx_sop
+addSignal -h 15 -holdScope rx_eop
+addSignal -h 15 -holdScope rx_valid
+addSignal -h 15 -holdScope rx_ready
+addSignal -h 15 -holdScope rx_data[7:0]
+addSignal -h 15 -holdScope d[10:0]
+addSignal -h 15 -holdScope c_out[4:0]
+addSignal -h 15 -holdScope crc5_right
+addSignal -h 15 -holdScope rx_pid[3:0]
+addSignal -h 15 -holdScope rx_endp[3:0]
+addSignal -h 15 -holdScope rx_handshake_on
+addSignal -h 15 -holdScope rx_pid_en
+addSignal -h 15 -holdScope addr_match
+addSignal -h 15 -holdScope addr_ok
+addSignal -h 15 -holdScope pid_h_l_ok
+addSignal -h 15 -holdScope pid_is_not_data
+addSignal -h 15 -holdScope pid_ok
+addGroup "crc5_ru_crc5"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/crc5_ru_u0/crc5_u0/c[4:0]
+addSignal -h 15 -holdScope c_out[4:0]
+addSignal -h 15 -holdScope d[10:0]
+addGroup "crc16_ru"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/crc16_ru_u0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope rx_sop
+addSignal -h 15 -holdScope rx_eop
+addSignal -h 15 -holdScope rx_valid
+addSignal -h 15 -holdScope rx_ready
+addSignal -h 15 -holdScope rx_data[7:0]
+addSignal -h 15 -holdScope rx_data_on
+addSignal -h 15 -holdScope rx_sop_en
+addSignal -h 15 -holdScope data_reg[7:0]
+addSignal -h 15 -holdScope sop_reg
+addSignal -h 15 -holdScope eop_reg
+addSignal -h 15 -holdScope valid_reg
+addSignal -h 15 -holdScope packet_is_data
+addSignal -h 15 -holdScope rx_lt_data[7:0]
+addSignal -h 15 -holdScope rx_lt_eop
+addSignal -h 15 -holdScope rx_lt_sop
+addSignal -h 15 -holdScope rx_lt_eop_en
+addSignal -h 15 -holdScope rx_lt_ready
+addSignal -h 15 -holdScope rx_lt_valid
+addSignal -h 15 -holdScope tran_buf
+addSignal -h 15 -holdScope tran_en
+addGroup "link_control"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/link_control_u0/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope rx_handshake_on
+addSignal -h 15 -holdScope rx_pid[3:0]
+addSignal -h 15 -holdScope rx_pid_en
+addSignal -h 15 -holdScope rx_sop_en
+addSignal -h 15 -holdScope rx_sop_en_regd
+addSignal -h 15 -holdScope rx_data_on
+addSignal -h 15 -holdScope d_oe
+addSignal -h 15 -holdScope delay_cnt[5:0]
+addSignal -h 15 -holdScope delay_done
+addSignal -h 15 -holdScope delay_on
+addSignal -h 15 -holdScope delay_threshole[5:0]
+addSignal -h 15 -holdScope master_d_oe
+addSignal -h 15 -holdScope master_finish_sending_rt
+addSignal -h 15 -holdScope master_finish_sending_wr[1:0]
+addSignal -h 15 -holdScope master_send_rt
+addSignal -h 15 -holdScope master_send_wt
+addSignal -h 15 -holdScope ms
+addSignal -h 15 -holdScope ms_receive_hs
+addSignal -h 15 -holdScope slave_d_oe
+addSignal -h 15 -holdScope slave_has_received_rt
+addSignal -h 15 -holdScope slave_receive_rt
+addSignal -h 15 -holdScope slave_receive_wt
+addSignal -h 15 -holdScope time_out
+addSignal -h 15 -holdScope time_threshold[15:0]
+addSignal -h 15 -holdScope timer[15:0]
+addSignal -h 15 -holdScope tx_con_pid[3:0]
+addSignal -h 15 -holdScope tx_con_pid_en
+addSignal -h 15 -holdScope tx_data_on
+addSignal -h 15 -holdScope tx_lp_eop_en
+addGroup "control_tu"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/control_tu_u0/cancle_buf
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope data_buf[7:0]
+addSignal -h 15 -holdScope eop_buf
+addSignal -h 15 -holdScope ready_buf
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope sop_buf
+addSignal -h 15 -holdScope tx_data_on
+addSignal -h 15 -holdScope tx_lp_cancle
+addSignal -h 15 -holdScope tx_lp_data[7:0]
+addSignal -h 15 -holdScope tx_lp_eop
+addSignal -h 15 -holdScope tx_lp_eop_en
+addSignal -h 15 -holdScope tx_lp_ready
+addSignal -h 15 -holdScope tx_lp_sop
+addSignal -h 15 -holdScope tx_lp_valid
+addSignal -h 15 -holdScope tx_lt_cancle
+addSignal -h 15 -holdScope tx_lt_data[7:0]
+addSignal -h 15 -holdScope tx_lt_eop
+addSignal -h 15 -holdScope tx_lt_ready
+addSignal -h 15 -holdScope tx_lt_sop
+addSignal -h 15 -holdScope tx_lt_valid
+addSignal -h 15 -holdScope tx_to_data[7:0]
+addSignal -h 15 -holdScope tx_to_eop
+addSignal -h 15 -holdScope tx_to_ready
+addSignal -h 15 -holdScope tx_to_sop
+addSignal -h 15 -holdScope tx_to_valid
+addSignal -h 15 -holdScope valid_buf
+addGroup "crc5_tu"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/crc5_tu_u0/addr_reg[6:0]
+addSignal -h 15 -holdScope c_out[4:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope crc_out[4:0]
+addSignal -h 15 -holdScope d[10:0]
+addSignal -h 15 -holdScope endp_reg[3:0]
+addSignal -h 15 -holdScope pid_reg[3:0]
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope send_cnt[1:0]
+addSignal -h 15 -holdScope tx_addr[6:0]
+addSignal -h 15 -holdScope tx_con_pid[3:0]
+addSignal -h 15 -holdScope tx_con_pid_en
+addSignal -h 15 -holdScope tx_endp[3:0]
+addSignal -h 15 -holdScope tx_pid[3:0]
+addSignal -h 15 -holdScope tx_ready
+addSignal -h 15 -holdScope tx_to_data[7:0]
+addSignal -h 15 -holdScope tx_to_eop
+addSignal -h 15 -holdScope tx_to_ready
+addSignal -h 15 -holdScope tx_to_sop
+addSignal -h 15 -holdScope tx_to_valid
+addSignal -h 15 -holdScope tx_valid
+addSignal -h 15 -holdScope valid_reg
+addGroup "crc5_tu_crc5"
+addSignal -h 15 /usb_link_top_tb/usb_link_u0/crc5_tu_u0/crc5_tx_u0/c[4:0]
+addSignal -h 15 -holdScope c_out[4:0]
+addSignal -h 15 -holdScope d[10:0]
+addGroup "G12"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/UBS2.0/cicc25_fsdb/case0/case0.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/usb_link_top_tb"
+"/usb_link_top_tb/usb_link_u0"
+"/usb_link_top_tb/usb_link_u0/crc5_tu_u0"
+"/usb_link_top_tb/usb_link_u0/crc16_ru_u0"
+
+SCOPE_LIST_BEGIN
+"/usb_link_top_tb"
+"/usb_link_top_tb/usb_link_u0"
+"/usb_link_top_tb/usb_link_u0/crc5_ru_u0"
+"/usb_link_top_tb/usb_link_u0/crc5_ru_u0/crc5_u0"
+"/usb_link_top_tb/usb_link_u0/crc5_tu_u0"
+"/usb_link_top_tb/usb_link_u0/crc16_ru_u0"
+"/usb_link_top_tb/usb_link_u0/link_control_u0"
+"/usb_link_top_tb/usb_link_u0/control_tu_u0"
+"/usb_link_top_tb/usb_link_u0/crc5_tu_u0/crc5_tx_u0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

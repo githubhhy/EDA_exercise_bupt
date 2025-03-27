@@ -1,0 +1,10 @@
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/control.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/correlator.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/decode.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/detect.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/down_converter.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/integrator.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/local_carry_wave.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/m_code_31_generate.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/rtl/top.v
+/home/ICer/EDA_exercise_bupt/exercise1_temp/tb/tb_top.v

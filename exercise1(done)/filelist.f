@@ -1,0 +1,10 @@
+./tb/tb_top.v
+./rtl/integrator.v
+./rtl/detect.v
+./rtl/local_carry_wave.v
+./rtl/m_code_31_generate.v
+./rtl/down_converter.v
+./rtl/correlator.v
+./rtl/top.v
+./rtl/control.v
+./rtl/decode.v

@@ -1,0 +1,55 @@
+debImport "case0.fsdb"
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/home/ICer/EDA_exercise_bupt/UBS2.0/cicc25_fsdb/case0/case0.fsdb}
+wvSetCursor -win $_nWave2 578238.037486
+wvSetCursor -win $_nWave2 75738.987278
+wvSetCursor -win $_nWave2 758846.391764
+wvRestoreSignal -win $_nWave2 \
+           "/home/ICer/EDA_exercise_bupt/UBS2.0/cicc25_fsdb/case0/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSetCursor -win $_nWave2 382274.071134 -snap {("crc16_ru" 9)}
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 75
+wvSetCursor -win $_nWave2 323281.158922 -snap {("interface with phy" 3)}
+wvSetCursor -win $_nWave2 2094772.492962 -snap {("with link layer" 1)}
+wvSelectGroup -win $_nWave2 {system and register}
+wvSelectSignal -win $_nWave2 {( "system and register" 1 )} 
+wvScrollDown -win $_nWave2 96
+wvSetCursor -win $_nWave2 654085.033765 -snap {("link_control" 14)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 39
+wvScrollDown -win $_nWave2 9
+wvScrollUp -win $_nWave2 78
+wvScrollUp -win $_nWave2 21
+wvScrollUp -win $_nWave2 9
+wvSetCursor -win $_nWave2 434482.477302 -snap {("crc5_ru" 12)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 107439.960420 -snap {("crc5_ru" 10)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "crc5_ru" 15 )} 
+wvSelectSignal -win $_nWave2 {( "crc5_ru" 15 17 )} 
+debExit

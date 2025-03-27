@@ -1,0 +1,57 @@
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP2_Full64 -- Fri Mar 28 01:17:57 2025
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file './tb/tb_top.v'
+Parsing design file './rtl/integrator.v'
+Parsing design file './rtl/detect.v'
+Parsing design file './rtl/local_carry_wave.v'
+Parsing design file './rtl/m_code_31_generate.v'
+Parsing design file './rtl/down_converter.v'
+Parsing design file './rtl/correlator.v'
+Parsing design file './rtl/top.v'
+
+Warning-[IPDASP] Identifier in ANSI port declaration
+./rtl/top.v, 80
+  Redeclaration of ANSI ports not allowed for 'decode_D', this will be an 
+  error in a future release
+
+Parsing design file './rtl/control.v'
+Parsing design file './rtl/decode.v'
+Top Level Modules:
+       tb_top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module tb_top
+make[1]: Entering directory '/home/ICer/EDA_exercise_bupt/exercise1_temp/csrc'
+make[1]: Leaving directory '/home/ICer/EDA_exercise_bupt/exercise1_temp/csrc'
+make[1]: Entering directory '/home/ICer/EDA_exercise_bupt/exercise1_temp/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib   objs/amcQw_d.o   _35892_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/ICer/EDA_exercise_bupt/exercise1_temp/csrc'
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Mar 28 01:17 2025
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'tb.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+$finish called from file "./tb/tb_top.v", line 83.
+$finish at simulation time            992000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 992000000 ps
+CPU Time:      0.230 seconds;       Data structure size:   0.0Mb
+Fri Mar 28 01:17:57 2025
+CPU time: .158 seconds to compile + .137 seconds to elab + .117 seconds to link + .254 seconds in simulation

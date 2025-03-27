@@ -1,0 +1,22 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        ./tb/tb_top.v
+        ./rtl/integrator.v
+        ./rtl/detect.v
+        ./rtl/local_carry_wave.v
+        ./rtl/m_code_31_generate.v
+        ./rtl/down_converter.v
+        ./rtl/correlator.v
+        ./rtl/top.v
+        ./rtl/control.v
+        ./rtl/decode.v
+
+
+*Warning* symbol decode_D duplicated
+"./rtl/top.v", 80: 
+Highest level modules:
+tb_top
+
+Total	0 error(s),   1 warning(s)
