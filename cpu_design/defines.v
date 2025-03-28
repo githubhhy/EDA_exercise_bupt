@@ -48,21 +48,28 @@
 `define FUNCT3_BLTU 3'b110
 `define FUNCT3_BGEU 3'b111
 
+`define FUNCT3_JALR 3'b000
 
-`define ALU_OP_ADD      4'b0000
-`define ALU_OP_SUB      4'b1000
-`define ALU_OP_SLL      4'b0001
-`define ALU_OP_SLT      4'b0010
-`define ALU_OP_SLTU     4'b0011
-`define ALU_OP_XOR      4'b0100
-`define ALU_OP_SRL      4'b0101
-`define ALU_OP_SRA      4'b1101
-`define ALU_OP_OR       4'b0110
-`define ALU_OP_AND      4'b0111
+`define FUNCT3_ECALL 3'b000
+`define FUNCT3_EBREAK 3'b000
 
-`define ALU_OP_EQ       4'b1001
-`define ALU_OP_NEQ      4'b1010
-`define ALU_OP_GE       4'b1100
-`define ALU_OP_GEU      4'b1011
+`define FUNCT3_FENCE 3'b000
+
+`define ALU_OP_ADD      4'b0000             //加
+`define ALU_OP_SUB      4'b1000             //减
+`define ALU_OP_SLL      4'b0001             //逻辑左移
+`define ALU_OP_SLT      4'b0010             //小于
+`define ALU_OP_SLTU     4'b0011             //小于（无符号）
+`define ALU_OP_XOR      4'b0100             //异或
+`define ALU_OP_SRL      4'b0101             //逻辑右移
+`define ALU_OP_SRA      4'b1101             //算数右移（msb填充）
+`define ALU_OP_OR       4'b0110             //或
+`define ALU_OP_AND      4'b0111             //与
+
+`define ALU_OP_EQ       4'b1001             //相等
+`define ALU_OP_NEQ      4'b1010             //不相等
+`define ALU_OP_GE       4'b1100             //大于等于（有符号）
+`define ALU_OP_GEU      4'b1011             //大于等于（无符号）
 
 `define ALU_OP_XXX      4'b1111
+

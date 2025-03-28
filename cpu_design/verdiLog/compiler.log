@@ -1,0 +1,21 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        ./rtl/id.v
+        ./tb/tb_top.v
+        ./defines.v
+
+
+*Error* illegal LHS in continuous assignment
+"./rtl/id.v", 45: 
+
+*Error* illegal LHS in continuous assignment
+"./rtl/id.v", 46: 
+
+*Error* illegal LHS in continuous assignment
+"./rtl/id.v", 233: 
+Highest level modules:
+tb_top
+
+Total	3 error(s),   0 warning(s)
