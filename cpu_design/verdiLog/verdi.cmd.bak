@@ -1,0 +1,40 @@
+debImport "-f" "filelist.f"
+debLoadSimResult /home/ICer/EDA_exercise_bupt/cpu_design/tb.fsdb
+wvCreateWindow
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_waddr" -line 20 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBSelect "tb_top.uut" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top.uut" -delim "."
+srcHBSelect "tb_top.uut" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {4 32 1 1 1 1} -backward
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "imm_gen_op" -line 36 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {38 44 1 1 2 1} -backward
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvSetCursor -win $_nWave2 9841.965657 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetCursor -win $_nWave2 40154.655870 -snap {("G1" 14)}
+wvSelectSignal -win $_nWave2 {( "G1" 10 )} 
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 20068.489583 -snap {("G1" 1)}
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 40229.036458 -snap {("G1" 14)}
+debExit

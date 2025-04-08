@@ -1,0 +1,102 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 872 171 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 177047691.506996
+cursor 25530000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 33
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByRising
+
+
+addGroup "G1"
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb.fsdb"
+addSignal -h 15 /tb_top/D
+addSignal -h 15 -holdScope m_bit
+addSignal -h 15 -holdScope b
+addSignal -h 15 -2COMP -UDEC -holdScope cos_value[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope cos_counter[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope cos_counter[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope IFin[1:0]
+addSignal -h 15 /tb_top/uut/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -2COMP -UDEC -holdScope IFin[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope cos_wave[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope sin_wave[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope conv_I[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope conv_Q[1:0]
+addSignal -h 15 -UNSIGNED -BIN /tb_top/uut/u_m_code_31_generate/Q[4:0]
+addSignal -h 15 /tb_top/uut/m_code
+addSignal -h 15 -UNSIGNED -UDEC /tb_top/uut/u_m_code_31_generate/count[3:0]
+addSignal -h 15 -2COMP -UDEC /tb_top/uut/corr_I[1:0]
+addSignal -h 15 -2COMP -UDEC -holdScope corr_Q[1:0]
+addSignal -h 15 -UNSIGNED -UDEC /tb_top/uut/u_integrator/counter[8:0]
+addSignal -h 15 /tb_top/uut/sum_I[9:0]
+addSignal -h 15 -holdScope sum_Q[9:0]
+addSignal -h 15 -holdScope energy[19:0]
+addSignal -h 15 -holdScope result_ok
+addSignal -h 15 -holdScope delay_en
+addSignal -h 15 -holdScope shift_parse
+addSignal -h 15 -holdScope flag
+addGroup "G2"
+addSignal -h 15 /tb_top/uut/flag
+addSignal -h 15 /tb_top/m_bit
+addSignal -h 15 /tb_top/uut/m_code
+addSignal -h 15 /tb_top/D
+addSignal -h 15 -holdScope decode_D
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_top"
+"/tb_top/uut"
+
+SCOPE_LIST_BEGIN
+"/tb_top"
+"/tb_top/uut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

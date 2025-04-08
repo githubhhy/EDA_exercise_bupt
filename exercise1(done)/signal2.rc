@@ -1,0 +1,78 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 872 180 149
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb_beidou.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 7568203104.000000
+cursor 124887840.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 9
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb_beidou.fsdb"
+addSignal -h 15 /tb_top_beidou/uut/flag
+addGroup "G2"
+addSignal -h 15 /tb_top_beidou/uut/result_ok
+addSignal -h 15 -holdScope energy[49:0]
+addSignal -h 15 /tb_top_beidou/ranging_code
+addSignal -h 15 /tb_top_beidou/uut/local_code
+addSignal -h 15 /tb_top_beidou/D
+addSignal -h 15 /tb_top_beidou/uut/decode_D
+addSignal -h 15 -holdScope shift_parse
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/ICer/EDA_exercise_bupt/exercise1(done)/tb_beidou.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_top_beidou"
+"/tb_top_beidou/uut"
+
+SCOPE_LIST_BEGIN
+"/tb_top_beidou"
+"/tb_top_beidou/uut"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
